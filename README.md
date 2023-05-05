@@ -4,15 +4,15 @@ This tool is designed to help you manage changes in multiple GitHub repositories
 
 This specific example was intended to provide functionalities in disabling packages and releases for repositories and mark changes for review using the GitHub CLI, and will need to be modified to match the user's intended purposes.
 
-## Implementation specifically for Linux (Ubuntu LTS) that can be easily adapted for Windows use
+### Implementation specifically for Linux (Ubuntu LTS) that can be easily adapted for Windows use
 
 This implementation guide focuses on Ubuntu LTS, but the steps can be adapted for Windows with slight modifications.
 
-### Prerequisites
+#### Prerequisites
 
 - [GitHub CLI](https://cli.github.com/) must be installed on your machine.
 
-### Usage
+#### Usage
 ```
 ├── 1. Log in to your GitHub account using the GitHub CLI
 │ ├── gh auth login
