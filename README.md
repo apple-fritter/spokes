@@ -1,10 +1,10 @@
 # spokes
 
-This tool is designed to help you manage changes in multiple GitHub repositories efficiently.
+This tool is designed to help you manage changes in multiple GitHub repositories efficiently. It has not been provided prepackaged as a downloadable, standalone file, as improper configuration or usage could lead to irreconcilable consequences.
 
 This specific example was intended to provide functionalities in disabling packages and releases for repositories and mark changes for review using the GitHub CLI, and will need to be modified to match the user's intended purposes.
 
-### Implementation specifically for Linux (Ubuntu LTS) that can be easily adapted for Windows use
+### Implementation specifically for Linux (Ubuntu LTS)
 
 This implementation guide focuses on Ubuntu LTS, but the steps can be adapted for Windows with slight modifications.
 
@@ -31,15 +31,20 @@ This implementation guide focuses on Ubuntu LTS, but the steps can be adapted fo
 └── gh pr create
 ```
 
-1. **Log in to your GitHub account using the GitHub CLI:** Run the following command to log in to your GitHub account: `gh auth login`
+#### 1. **Log in to your GitHub account using the GitHub CLI:**
+Run the following command to log in to your GitHub account:
+- `gh auth login`
 
-Provide your GitHub credentials when prompted.
+> Provide your GitHub credentials when prompted.
 
-2. **Change to the directory containing your repositories:** Navigate to the directory where your repositories are located. For example: `cd /home/GitHubFAN23/github`
+#### 2. **Change to the directory containing your repositories:**
+Navigate to the directory where your repositories are located.
+- For example: `cd /home/GitHubFAN23/github`
 
-Replace "/home/GitHubFAN23/github" with the actual directory path where your repositories are stored.
+> Replace "/home/GitHubFAN23/github" with the actual directory path where your repositories are stored.
 
-3. **Loop through repositories and mark changes:** Use the following command to iterate over each repository, echo the repository name, open a browser for reviewing and marking changes using the GitHub CLI's `gh pr create --web` command:
+#### 3. **Loop through repositories and mark changes:**
+Use the following command to iterate over each repository, echo the repository name, open a browser for reviewing and marking changes using the GitHub CLI's `gh pr create --web` command:
 
 ```bash
 for dir in */; do
