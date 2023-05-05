@@ -1,8 +1,10 @@
 # spokes
 
-This tool is designed to help you manage changes in multiple GitHub repositories efficiently. It has not been provided prepackaged as a downloadable, standalone file, as improper configuration or usage could lead to irreconcilable consequences.
+This tool is designed to help you manage changes in multiple GitHub repositories efficiently. 
 
 This specific example was intended to provide functionalities in disabling packages and releases for repositories and mark changes for review using the GitHub CLI, and will need to be modified to match the user's intended purposes.
+
+> It has not been provided prepackaged as a downloadable, standalone file, as improper configuration or usage could lead to potentially irreconcilable consequences.
 
 ### Implementation specifically for Linux (Ubuntu LTS)
 
